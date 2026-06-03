@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindBloom | Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell dashboard-page">
+    <header class="site-header sticky-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">MindBloom</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="checkin.html">Check-In</a>
+          <a href="ai-companion.html">AI Companion</a>
+          <a href="meditation.html">Meditation</a>
+          <a href="journal.html">Journal</a>
+          <a href="reflections.html">Reflections</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container dashboard-grid">
+      <section class="glass-card dashboard-welcome">
+        <div>
+          <span class="eyebrow">Today</span>
+          <h1>Hi, Noor. Your mind deserves kindness today.</h1>
+          <p>Explore your current mood report, smart insights, and the next calm step.</p>
+        </div>
+        <a class="button button-primary" href="checkin.html">Log a check-in</a>
+      </section>
+
+      <section class="dashboard-metrics glass-card metrics-grid">
+        <article>
+          <span class="metric-label">Mood score</span>
+          <h2 id="dashboard-mood-score">0%</h2>
+          <p>Feeling balanced with supportive focus.</p>
+        </article>
+        <article>
+          <span class="metric-label">Meditation streak</span>
+          <h2 id="dashboard-meditation-streak">0 days</h2>
+          <p>Consistency is building calm energy.</p>
+        </article>
+        <article>
+          <span class="metric-label">Sleep score</span>
+          <h2 id="dashboard-sleep-score">0</h2>
+          <p>Rest is improving with gentle night routines.</p>
+        </article>
+      </section>
+
+      <section class="glass-card summary-card">
+        <div class="section-heading">
+          <span class="eyebrow">Wellness insights</span>
+          <h2>Small shifts that matter</h2>
+        </div>
+        <ul class="insights-list">
+          <li>Today’s mood check suggests 20 minutes of calming breathing.</li>
+          <li>Sleep improved after a shorter screen routine before bed.</li>
+          <li>Try the Study Coach mode for focused, reassuring productivity.</li>
+        </ul>
+      </section>
+
+      <section class="glass-card journal-preview">
+        <div class="section-heading">
+          <span class="eyebrow">Recent journal entries</span>
+          <h2>Reflect on your emotional flow.</h2>
+        </div>
+        <div class="entry-card">
+          <p>“I felt anxious today before the presentation, but I noticed my breath and regained calm.”</p>
+          <span>May 31 • Mood: calm</span>
+        </div>
+        <div class="entry-card">
+          <p>“Today I took a break from my phone and felt a little lighter.”</p>
+          <span>May 30 • Mood: hopeful</span>
+        </div>
+      </section>
+
+      <section class="glass-card recommendation-card">
+        <div class="section-heading">
+          <span class="eyebrow">AI recommendations</span>
+          <h2>Support that feels personal.</h2>
+        </div>
+        <div class="recommendation-list">
+          <div class="recommendation-item">
+            <h3>Gentle breathing</h3>
+            <p>Try a 5-minute focused breath session with soft guidance.</p>
+          </div>
+          <div class="recommendation-item">
+            <h3>Journaling prompt</h3>
+            <p>Write about one small win and one kind thing you did for yourself.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">MindBloom</a>
+          <p>Your daily calm companion.</p>
+        </div>
+        <div class="footer-links">
+          <a href="analytics.html">Analytics</a>
+          <a href="psychologists.html">Psychologists</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> MindBloom</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

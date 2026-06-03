@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindBloom | Reflections</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell reflections-page">
+    <header class="site-header sticky-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">MindBloom</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="journal.html">Journal</a>
+          <a href="meditation.html">Meditation</a>
+          <a href="community.html">Community</a>
+          <a href="premium.html">Premium</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section-spaced">
+      <section class="glass-card reflections-intro">
+        <span class="eyebrow">Saved reflections</span>
+        <h1>Your meditation thoughts and daily check-ins in one place.</h1>
+        <p>Review the reflections you’ve saved during meditation and your most recent mood check-ins.</p>
+      </section>
+
+      <section class="glass-card reflection-list-card">
+        <div class="section-heading">
+          <span class="eyebrow">Meditation reflections</span>
+          <h2>What came up during practice.</h2>
+        </div>
+        <div class="reflection-items" id="reflection-items"></div>
+      </section>
+
+      <section class="glass-card checkin-history-card">
+        <div class="section-heading">
+          <span class="eyebrow">Check-in history</span>
+          <h2>Your recent mood and energy logs.</h2>
+        </div>
+        <div class="checkin-items" id="checkin-items"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">MindBloom</a>
+          <p>Look back with kindness and insight.</p>
+        </div>
+        <div class="footer-links">
+          <a href="analytics.html">Analytics</a>
+          <a href="psychologists.html">Psychologists</a>
+          <a href="premium.html">Premium</a>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> MindBloom</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

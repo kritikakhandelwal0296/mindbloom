@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindBloom | AI Companion</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell ai-page">
+    <header class="site-header sticky-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">MindBloom</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="checkin.html">Check-In</a>
+          <a href="meditation.html">Meditation</a>
+          <a href="journal.html">Journal</a>
+          <a href="reflections.html">Reflections</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section-spaced">
+      <section class="glass-card companion-card">
+        <div class="section-heading">
+          <span class="eyebrow">AI companion</span>
+          <h1>Choose a calm support style.</h1>
+        </div>
+        <div class="companion-modes">
+          <button class="mode-button active" data-mode="Gentle Listener">Gentle Listener</button>
+          <button class="mode-button" data-mode="Study Coach">Study Coach</button>
+          <button class="mode-button" data-mode="Calm Companion">Calm Companion</button>
+          <button class="mode-button" data-mode="Motivation Coach">Motivation Coach</button>
+        </div>
+        <div class="chat-window glass-card">
+          <div class="chat-message bot">
+            <p>Hi there, I’m here to listen. What would you like to share today?</p>
+          </div>
+          <div class="chat-message user">
+            <p>I’ve been feeling a bit stressed about my schedule.</p>
+          </div>
+          <div class="chat-message bot">
+            <p>Thank you for sharing. Let’s explore a gentle step you can take right now.</p>
+          </div>
+        </div>
+        <form class="chat-input" onsubmit="return false;">
+          <input type="text" placeholder="Write your message..." aria-label="Chat input" />
+          <button class="button button-primary" type="submit">Send</button>
+        </form>
+        <section class="glass-card companion-analysis-card hidden">
+          <div class="section-heading">
+            <span class="eyebrow">Thoughtful support</span>
+            <h2>Your companion shares actions and gentle prompts.</h2>
+          </div>
+          <p class="companion-summary"></p>
+          <ul class="companion-actions"></ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">MindBloom</a>
+          <p>Your supportive conversation partner.</p>
+        </div>
+        <div class="footer-links">
+          <a href="meditation.html">Meditation</a>
+          <a href="journal.html">Journal</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> MindBloom</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

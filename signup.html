@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindBloom | Sign Up</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell auth-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">MindBloom</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container auth-container">
+      <section class="glass-card auth-card">
+        <span class="eyebrow">Begin your journey</span>
+        <h1>Create a safe space for your mind.</h1>
+        <p>Share a few details so MindBloom can support you with thoughtful reminders.</p>
+
+        <form class="auth-form">
+          <label>
+            Full name
+            <input type="text" placeholder="Sana Patel" required />
+          </label>
+          <label>
+            Age
+            <input type="number" min="13" placeholder="21" required />
+          </label>
+          <label>
+            Occupation
+            <input type="text" placeholder="Student / Designer" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Choose a password" required />
+          </label>
+          <label>
+            Wellness goals
+            <textarea placeholder="Build better focus, reduce stress, and sleep more peacefully." rows="4" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Create account</button>
+        </form>
+
+        <p class="auth-note">Already have an account? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer simple-footer">
+      <p>© <span id="year-alt"></span> MindBloom</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

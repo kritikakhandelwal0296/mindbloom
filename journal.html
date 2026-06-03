@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindBloom | Journal</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell journal-page">
+    <header class="site-header sticky-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">MindBloom</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="checkin.html">Check-In</a>
+          <a href="ai-companion.html">AI Companion</a>
+          <a href="meditation.html">Meditation</a>
+          <a href="reflections.html">Reflections</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section-spaced">
+      <section class="glass-card journal-intro">
+        <span class="eyebrow">Mind Vault</span>
+        <h1>Your reflective journal and emotion tracker.</h1>
+        <p>Write safely, tag feelings, search entries, and see your emotional summary.</p>
+      </section>
+
+      <section class="glass-card journal-form-card">
+        <h2>New journal entry</h2>
+        <form class="journal-form">
+          <label>
+            Entry title
+            <input type="text" placeholder="Today I noticed..." />
+          </label>
+          <label>
+            Emotion tags
+            <input type="text" placeholder="Hopeful, calm, nervous" />
+          </label>
+          <label>
+            Journal content
+            <textarea rows="5" placeholder="Write your thoughts here..."></textarea>
+          </label>
+          <div class="journal-actions">
+            <button class="button button-outline" type="button">Voice note</button>
+            <button class="button button-primary" type="submit">Save entry</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="glass-card journal-list-card">
+        <div class="section-heading">
+          <span class="eyebrow">Recent entries</span>
+          <a class="link-muted" href="#">Search entries</a>
+        </div>
+        <article class="entry-card small-entry">
+          <p>“I felt proud when I completed the project, even though I was anxious before starting.”</p>
+          <span>May 31 • Tags: nervous, proud</span>
+        </article>
+        <article class="entry-card small-entry">
+          <p>“A mindful pause helped me notice the good moments in a busy day.”</p>
+          <span>May 30 • Tags: calm, gratitude</span>
+        </article>
+      </section>
+
+      <section class="glass-card ai-summary-card">
+        <div class="section-heading">
+          <span class="eyebrow">AI summary</span>
+          <h2>Your emotional highlights</h2>
+        </div>
+        <p>Recent entries suggest growing gratitude and a gentle shift away from stress toward inner calm.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">MindBloom</a>
+          <p>Keep your thoughts safe and thoughtful.</p>
+        </div>
+        <div class="footer-links">
+          <a href="analytics.html">Analytics</a>
+          <a href="premium.html">Premium</a>
+          <a href="community.html">Community</a>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> MindBloom</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
